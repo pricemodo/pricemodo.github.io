@@ -5,3 +5,5 @@
 #modoLogo {
 	margin-top: -5px;
 }
+
+.flexslider .slides > li {height:300px;}
