@@ -7,3 +7,6 @@
 }
 
 .flexslider .slides > li {height:300px;}
+
+#buyerBtn, #sellerBtn {font-weight:bold; background-color:#F7F7F7; border-color: #0886c6; color: #0886c6}
+#buyerBtn:hover, #sellerBtn:hover {font-weight:bold; background-color:#0886c6; border-color: #F7F7F7; color: #F7F7F7}
