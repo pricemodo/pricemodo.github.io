@@ -119,15 +119,15 @@
 				<!-- call to action -->
 				<section class="color4 slice">  
 					<div class="container">
-					    <div class="row">
-					      
-						   	<div class="col-md-5 col-sm-5 col-xs-5" style="text-align:right">
-						  		<a class="btn btn-primary color3 btn-lg" style="font-weight:bold">Sellers</a>
-						    </div>
-						  	<div class="col-md-2"></div>
-					      	<div class="col-md-5 col-sm-5 col-xs-5" style="text-align:left">
-					  			<a class="btn btn-primary color3 btn-lg" style="font-weight:bold">Buyers</a>
-					    	</div>
+						<div class="row">
+						  
+							<div class="col-md-5 col-sm-5 col-xs-5" style="text-align:right">
+								<a class="btn btn-primary color3 btn-lg" style="font-weight:bold" data-toggle="modal" data-target="#sellersModal">Sellers</a>
+							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-5 col-sm-5 col-xs-5" style="text-align:left">
+								<a class="btn btn-primary color3 btn-lg" style="font-weight:bold" data-toggle="modal" data-target="#buyersModal">Buyers</a>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -876,6 +876,38 @@
 							</div>
 						</section>
 						<!-- End footer -->
+						<div class="modal fade" tabindex="-1" role="dialog" id="buyersModal">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h2 class="modal-title">Buyers</h2>
+							  </div>
+							  <div class="modal-body">
+								<p>For Sales Inquiries, please email info@pricemodo.com</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
+							  </div>
+							</div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<div class="modal fade" tabindex="-1" role="dialog" id="sellersModal">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h2 class="modal-title">Sellers</h2>
+							  </div>
+							  <div class="modal-body">
+								<p>Please email quotation sheets with prices, quantities, descriptions, and prictures to info@pricemodo.com</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
+							  </div>
+							</div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
 					</div>
 					<!-- global wrapper -->
 		<!-- End Document 
