@@ -1,78 +1,683 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Ashley | One Page Parallax Bootstrap 3</title>
-        <meta name="description" content="Ashley is a bootstrap 3 Premium template by Little Neko">
-        <meta name="viewport" content="width=device-width">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>Price Modo</title>
+		<meta name="description" content="Ashley is a One Page Bootstrap 3 Premium website Template, using nice Paralax effect, HTML5, CSS3 and Twitter Bootstrap 3">
+		<meta name="author" content="Little NEKO">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- web font  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+		<!-- plugin css  -->
+		<link rel="stylesheet" type="text/css" href="js-plugin/animation-framework/animate.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/magnific-popup/magnific-popup.css" />
+		<link type="text/css" rel="stylesheet" href="js-plugin/isotope/css/style.css">
+		<link rel="stylesheet" type="text/css" href="js-plugin/flexslider/flexslider.css" />
+		<link rel="stylesheet" type="text/css" href="js-plugin/pageSlide/jquery.pageslide.css" />
+		<!-- Owl carousel-->
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" href="js-plugin/owl.carousel/owl-carousel/owl.transitions.css">
+		<!-- icon fonts -->
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons.css">
+		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
+		<!-- Custom css -->
+		<link type="text/css" rel="stylesheet" href="css/layout.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/colors.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<script src="js/modernizr-2.6.1.min.js"></script>
+		<!-- Favicons
+		================================================== -->
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<img src="images/theme-pics/loader.gif" alt=""/><h1 class="noSubtitle">Welcome home</h1>
+			</div>
+		</div>
+		<!-- Preloader -->
+		<!-- Primary Page Layout 
+		================================================== -->
+		<!-- globalWrapper -->
+		<div id="globalWrapper" class="localscroll">
+			<!-- header -->
+			<header id="mainHeader" class="navbar-fixed-top" style="background-color: #0886c6" role="banner">
+				<div class="container">
+					<nav class="navbar navbar-default scrollMenu" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="index.html"><img id="modoLogo" src="images/logo_placeholder.png" alt="Ashley website template"/></a> </div>
+							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+								<ul class="nav navbar-nav pull-right" id="menuList">
+									<li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
+									<li><a href="#news"><i class="icon-comment"></i>VIP</a> </li>
+									<li><a href="#services"><i class="icon-comment"></i>Services</a> </li>
+									<li><a href="#channels"><i class="icon-thumbs-up"></i>Channels</a> </li>
+									<li><a href="#works"><i class="icon-popup-1"></i>Brands</a> </li>
+									<!--<li><a href="#team"><i class="icon-users"></i>Team</a> </li>-->
+									<li><a href="#about"><i class="icon-star"></i>About</a> </li>
+									<li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
+									<!--<li><a href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207?ref=littleNeko" target="_blank"><i class="icon-download-outline"></i>Download</a> </li>-->
+								</ul>
+							</div>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="apple-touch-icon" href="home/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="home/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="home/apple-touch-icon-114x114.png">
+						</nav>
+					</div>
+				</header>
+				<!-- header -->
+				<!-- content -->
+				<section id="home" data-stellar-background-ratio="0.5">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-sm-6">
+								<div class="flexslider" id="flexHome">
+									<ul class="slides">
+										
+										<li>
+											<h1>Brand Name Products</h1>
+											<h2>DIRECT from Big Brand Manufacturers and Wholesalers</h2>
+										</li>
+										<li>
+											<h1>Below Wholesale Prices!</h1>
+											<h2>Brand Name Closeouts, Overstocks, Opportunity Buys, and Excess Inventory</h2>
+										</li>
+										
+										<li>
+											<h1>Online Retail and Wholesale Channels</h1>
+											<h2>We sell through FBA/Amazon, eBay, and Major Retailers</h2>
+										</li>
+										
+										
+									</ul>
+								</div> 
+							</div>
+<div class="col-lg-5 col-sm-6 hidden-xs">
+								<img src="https://bulq.com/assets/top-brands-8bddb51f5b3543ffd4ba177039410ac0987780ca014f8505ce75d4e61a720167.png" alt="Ashley, Bootstrap website template" class="img-responsive"><div style="margin-top: 30px"></div>
+<a class="btn btn-lg" id="buyerBtn" style="margin-left: 10px; margin-right:50px" data-toggle="modal" data-target="#sellersModal">Sellers</a>
+							<a class="btn btn-lg" id="sellerBtn" data-toggle="modal" data-target="#buyersModal">Buyers</a>
+							</div>
 
-        <link rel="stylesheet" href="home/css/normalize.css">
-        <link rel="stylesheet" href="home/css/main.css">
-        <link rel="stylesheet" href="files/css/custom.css">
-        <script src="home/js/vendor/modernizr-2.6.1.min.js"></script>
-    </head>
+						</div>
+					</div>
+				</section>
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
+				<!-- news -->
 
-        <!-- Add your site or application content here -->
-        <header>
-            <img id="logo" src="files/images/logo_placeholder.png" alt="Ashley | One Page Parallax Bootstrap 3" />
-            <h1>One Page Parallax Bootstrap 3 by <a href="http://www.little-neko.com" target="blank">Little Neko</a></h1>
-           
-        </header>
+				<section class="slice" id="news">
+					<div class="container imgHover">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>Become a VIP!</h1>
+								<h2 class="subTitle">Subscribe now to receive the latest updates, promotions, and VIP Deals!</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 col-md-4 col-sm-4"></div>
+							<div class="col-xs-4 col-md-4 col-sm-4" style="text-align:center">
+								<!-- Begin MailChimp Signup Form -->
+								<!--<link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+								<style type="text/css">
+									#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+									/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+									   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+								</style>-->
+								<div id="mc_embed_signup">
+								<form action="https://pricemodo.us14.list-manage.com/subscribe/post?u=11a809fe0d388fee87f050ee7&amp;id=3503264171" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								    <div id="mc_embed_signup_scroll">
+									
+								<div class="mc-field-group">
+									<div class="form-group">
+										<input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Enter Email" id="mce-EMAIL">
+									</div>
+								</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_11a809fe0d388fee87f050ee7_3503264171" tabindex="-1" value=""></div>
+								    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary"></div>
+								    </div>
+								</form>
+								</div>
+								<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+								<!--End mc_embed_signup-->
+							</div>
+						</div>
+						<!--
+						<div class="row">
 
-        <section id="globalWrapper">
-            <div id="selector" class="clearfix">
+							<article class="col-sm-4">
 
-                <article>
-                    <a href="files/index.html" title="Ashley | One Page Parallax Bootstrap 3" class="left" >
-                        <img src="home/img/home-screen-one-page.png" alt="" />
-                    </a>
-                </article>
-                
-                  <article>
-                   <a href="files/index-fullscreen.html" title="Ashley | One Page Parallax Bootstrap 3" class="right">
-                        <img src="home/img/home-screen-fullscreen.png" alt="" />
-                    </a>
-                </article>
+								<section class="imgWrapper"> 
+									<img src="images/news/news1.jpg" class="img-responsive" alt="Ashleye template image news" /> 
+								</section>
 
-                <article>
-                            <a href="files/index-animated.html" title="Ashley | One Page Parallax Bootstrap 3"  class="left" >
-                                <img src="home/img/home-screen-animated.png" alt="" />
-                            </a>
-                </article>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks"> 
 
-                <article>
-                            <a href="files/coming-soon.html" title="Ashley | One Page Parallax Bootstrap 3"  class="right" >
-                                <img src="home/img/home-screen-coming-soon.png" alt="" />
-                            </a>
-                </article>
-              
-                
-            </div>
+										<a href="images/news/news1.jpg" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a> 
+									</div>
+								</div>
+								<section class="newsText color4">
+									<h3>New hair cut today</h3>
+									<h4 class="date">September 12</h4>
+									<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was  too much frightened to say a word, but slowly followed her back to the  croquet-ground.</p>
+									<a href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207" class="btn btn-sm"><i class="icon-right-open-mini"></i>read more</a>
+								</section>
 
-          
-        </section>
+							</article>
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <script src="home/js/plugins.js"></script>
-        <script src="home/js/main.js"></script>
+							<article class="col-sm-4">
+								<section class="imgWrapper"> 
+									<img src="images/news/news2.jpg" class="img-responsive" alt="snowflake template image news" /> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks"> 
+										<a href="images/news/news2.jpg" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a> 
+									</div>
+								</div>
+								<section class="newsText color4">
+									<h3>We are a family</h3>
+									<h4 class="date">November 24</h4>
+									<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was  too much frightened to say a word, but slowly followed her back to the  croquet-ground.</p>
+									<a href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207" class="btn btn-sm"><i class="icon-right-open-mini "></i>read more</a>
+								</section>
+							</article>
 
-       
-    </body>
-</html>
+
+							<article class="col-sm-4">
+								<section class="imgWrapper"> 
+									<img src="images/news/news3.jpg" class="img-responsive" alt="snowflake template image news" /> 
+								</section>
+								<div class="mediaHover">
+									<div class="mask"></div>
+									<div class="iconLinks"> 
+										<a href="images/news/news3.jpg" class="image-link" title="Zoom" ><i class="icon-search iconRounded iconBig"></i><span>zoom</span></a> 
+									</div>
+								</div>
+								<section class="newsText color4">
+									<h3>Call me if you can</h3>
+									<h4 class="date">November 24</h4>
+									<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was  too much frightened to say a word, but slowly followed her back to the  croquet-ground.</p>
+									<a href="https://wrapbootstrap.com/theme/ashley-one-page-parallax-bootstrap-3-WB0R11207" class="btn btn-sm"><i class="icon-right-open-mini"></i>read more</a>
+								</section>
+							</article>
+
+
+						</div>-->
+					</div>
+				</section>
+				<!-- news -->
+				<!-- services -->
+				<section class="slice color1" id="services">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>Our services</h1>
+								<h2 class="subTitle">We are doing a couple of things you might be interested in</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="row boxFeature">
+									<div class="col-xs-3">
+										<img src="images/services/liquidation-logo.png"/>
+									</div>
+									<div class="col-xs-9">
+										<h2>Liquidation</h2>
+										<p>We help you clean out your excess inventory</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="row boxFeature">
+									<div class="col-xs-3">
+										<img src="images/services/fba-logo.png"/>
+									</div>
+									<div class="col-xs-9">
+										<h2>Fulfillment By Amazon</h2>
+										<p>We're approved to sell products through Amazon's fulfillment services</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="row boxFeature">
+									<div class="col-xs-3">
+										<img src="images/services/ecommerce-logo.png"/>
+									</div>
+									<div class="col-xs-9">
+										<h2>E-Commerce</h2>
+										<p>We boost sales through a variety retail and wholesale channels</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="row boxFeature">
+									<div class="col-xs-3">
+										<img src="images/services/handshake-logo.png"/>
+									</div>
+									<div class="col-xs-9">
+										<h2>Trusted Brands Suppliers</h2>
+										<p>We only carry the biggest brands that have high marketability</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- services --> 
+
+				<section id = "channels" class="pricing slice color1">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>Our Channels</h1>
+								<h2 class="subTitle">We increase sales volume through large online marketplaces</h2>
+								
+							</div>
+						</div>
+												<div class="portfolio-items isotopeWrapper clearfix imgHover row" id="3">
+
+							<article class="col-sm-4 isotopeItem women">
+								<section class="imgWrapper">
+									<img alt="" src="images/channels/amazon.png" class="img-responsive">
+								</section>
+							</article>
+
+							<article class="col-sm-4 isotopeItem cats">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/channels/ebay.png" class="img-responsive"> 
+								</section>
+							</article>
+
+							<article class="col-sm-4 isotopeItem graphics">
+								<section class="imgWrapper">
+									<img alt="" src="images/channels/groupon.png" class="img-responsive">
+								</section>
+							</article>
+
+							<article class="col-sm-4 isotopeItem cats">
+								<section class="imgWrapper">
+									<img alt="" src="images/channels/jet.png" class="img-responsive">
+								</section>
+							</article>
+							<article class="col-sm-4 isotopeItem cats">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/channels/newegg.png" class="img-responsive"> 
+								</section>
+							</article>
+
+							<article class="col-sm-4 isotopeItem women">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/channels/overstock.png" class="img-responsive"> 
+								</section>
+							</article>
+
+
+							<article class="col-sm-4 isotopeItem graphics">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/channels/walmart.png" class="img-responsive"> 
+								</section>
+
+							</article>
+
+							<article class="col-sm-4 isotopeItem women">
+								<section class="imgWrapper"> 
+									<img alt="" src="images/channels/wayfair.png" class="img-responsive"> 
+								</section>
+							</article>
+
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<div id="paralaxSlice2" data-stellar-background-ratio="0.5">
+					<div class="maskParent">
+						<div class="paralaxMask"></div>
+						<div class="paralaxText container">
+							<i class="icon-mobile iconBig"></i><i class="icon-tablet iconBig"></i><i class="icon-laptop iconBig"></i><i class="icon-desktop iconBig"></i>
+							<blockquote class="bigTitle">Optimizing E-Commerce on all devices</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<section class="slice" id="works">
+					<div class="container clearfix">
+						<div class="row">
+							<div class="col-sm-12">
+								<h1>Brands</h1>
+								<h2 class="subTitle">We supply these Top Brands</h2>
+							</div>
+						</div>
+						<div class = "row">
+							<div class = "col-sm-12">
+								<div class="center-block">
+									<img src="images/brands/big_img.png" style="width:100%"/>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!--
+					<section class="slice" id="team">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1>Meet our team</h1>
+									<h2 class="subTitle">We are beautiful and smart</h2>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<article>
+										<div><img src="images/team/pic1.jpg" alt="" class="img-responsive"></div>
+										<div class="boxContent text-center color4">
+											<h3>John DOE</h3>
+											<p>Executive Director</p>
+										</div>
+										<div class="boxContent text-center"> <a href="mailto:your.email@little-neko.com">j.doe@ashley.com</a>
+											<ul class="socialNetwork mt15">
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
+											</ul>
+										</div>
+									</article>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<article>
+										<div><img src="images/team/pic2.jpg" alt="" class="img-responsive"></div>
+										<div class="boxContent text-center color4">
+											<h3>Johanna Newsom</h3>
+											<p>Salesman</p>
+										</div>
+										<div class="boxContent text-center"> <a href="mailto:your.email@little-neko.com">j.newsom@ashley.com</a>
+											<ul class="socialNetwork mt15">
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Tumblr"><i class="icon-tumblr-1 iconRounded"></i></a></li>
+											</ul>
+										</div>
+									</article>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<article>
+										<div><img src="images/team/pic3.jpg" alt="" class="img-responsive"></div>
+										<div class="boxContent text-center color4">
+											<h3>Alexander Doe</h3>
+											<p>Graphic designer</p>
+										</div>
+										<div class="boxContent text-center"> <a href="mailto:your.email@little-neko.com">a.doe@ashley.com</a>
+											<ul class="socialNetwork mt15">
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+												<li><a href="#" class="tips" title="" data-original-title="follow me on YouTube"><i class="icon-youtube iconRounded"></i></a></li>
+											</ul>
+										</div>
+									</article>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<article>
+										<div><img src="images/team/pic4.jpg" alt="" class="img-responsive"></div>
+										<div class="boxContent text-center color4">
+											<h3>Pamela Anderson</h3>
+											<p>Programmer</p>
+										</div>
+										<div class="boxContent text-center"> <a href="mailto:your.email@little-neko.com">p.anderson66@ashley.com</a>
+											<ul class="socialNetwork mt15">
+												<li> <a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a> </li>
+												<li> <a href="#" class="tips" title="" data-original-title="follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a> </li>
+												<li> <a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a> </li>
+												<li> <a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i> </a> </li>
+												<li> <a href="#" class="tips" title="" data-original-title="follow me on Flickr"><i class="icon-flickr iconRounded"></i> </a> </li>
+											</ul>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+					-->
+
+
+					<section class="slice" id="about">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1>About us</h1>
+									<h2 class="subTitle">Our experience, partnerships, and innovation drive value for our clients</h2>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-4"> <img src="images/theme-pics/services.png" alt="services" class="img-responsive"> </div>
+								<div class="col-sm-4">
+									<p>With over 10 years of experience in  Tech and Wholesale, the Price Modo Team is equipped to help Retailers and Brands adapt to the everchanging Online marketplace.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div id="paralaxSlice4" data-stellar-background-ratio="0.5" >
+						<div class="maskParent">
+							<div class="paralaxMask"></div>
+
+							<div class="paralaxText">
+								<blockquote>Keep in touch with us</blockquote>
+
+							</div>
+						</div>
+					</div>
+					<section class="slice"  id="contactSlice" >
+						<div class="container">
+							<div class="row">
+
+								<div class="col-sm-12">
+									<h1 class="noSubtitle">Contact us</h1>
+								</div>
+								<div class="col-sm-12">
+									<div id="mapWrapper" class="mb30"></div>
+								</div>
+								<div class="col-sm-4">
+									<h4>Address:</h4>
+									<address>
+										Himalaya Company<br/>
+										77 Mass. Ave., E14/E15<br/>
+										Cambridge, MA 02139-4307 USA <br/>
+									</address>
+									<h4>Phone:</h4>
+									<address>
+										615.987.1234<br/>
+									</address>
+								</div>
+								<form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form">
+
+									<div class="col-sm-4"> 
+										<div class="form-group">
+											<label for="name">Name</label>
+											<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
+										</div>
+										<div class="form-group">
+											<label for="email">Email</label>
+											<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address"/>
+										</div>
+										<div class="form-group">
+											<label for="phone">Phone</label>
+											<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<label for="comments">Comments</label>
+											<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+										</div>
+										<fieldset class="clearfix securityCheck">
+											<legend>Security</legend>
+											<div class="form-group">
+												<img src="js-plugin/neko-contact-ajax-plugin/php/image.php" alt="Image verification" id="verifyImg"/>
+												<input class="required form-control"  id="verify" name="verify" type="text" >
+											</div>
+										</fieldset>
+									</div>                        
+									<div class="col-md-8 col-md-offset-4">
+										<div class="result"></div>
+										<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+
+					<!-- content -->
+					<!-- footer -->
+					<footer>
+						<section id="mainFooter">
+							<div class="container" id="footer">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="footerWidget">
+											<img src="images/neko-logo.png" alt="latest Little Neko news" id="footerLogo">
+											<p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Little Neko</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practises and up-to-date web technologies to create great user experiences. We love what we do and we hope you too ! </p>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="footerWidget">
+
+											<h3>Little NEKO</h3>
+											<address>
+												<p> <i class="icon-location"></i>&nbsp;77 Mass. Ave., E14/E15<br>
+													Cambridge, MA 02139-4307 USA <br>
+													<i class="icon-phone"></i>&nbsp;615.987.1234 <br>
+													<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a> </p>
+												</address>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</footer>
+						<section  id="footerRights">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6">
+										<p>Copyright © 2015 <a href="http://www.little-neko.com" target="blank">Little NEKO</a> / All rights reserved.</p>
+									</div>
+									<div class="col-sm-6">
+										<ul class="socialNetwork pull-right">
+											<li><a href="#" class="tips" title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+											<li><a href="https://twitter.com/LIttleNeko1" class="tips" title="follow me on Twitter" target="_blank"><i class="icon-twitter-bird iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+											<li><a href="#" class="tips" title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
+										</ul>     
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- End footer -->
+						<div class="modal fade" tabindex="-1" role="dialog" id="buyersModal">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h2 class="modal-title">Buyers</h2>
+							  </div>
+							  <div class="modal-body">
+								<p>For Sales Inquiries, please email info@pricemodo.com</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
+							  </div>
+							</div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<div class="modal fade" tabindex="-1" role="dialog" id="sellersModal">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h2 class="modal-title">Sellers</h2>
+							  </div>
+							  <div class="modal-body">
+								<p>Please email quotation sheets with prices, quantities, descriptions, and pictures to info@pricemodo.com</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
+							  </div>
+							</div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+					</div>
+					<!-- global wrapper -->
+		<!-- End Document 
+		================================================== -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/jquery.1.10.2.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.sloppy-masonry.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-share-urls/generator.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min-MODIFIED.js"></script>
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/custom_pm.js"></script>
+	</body>
+	</html>
